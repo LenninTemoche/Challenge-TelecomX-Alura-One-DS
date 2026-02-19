@@ -53,42 +53,40 @@ Challenge-TelecomX-Alura-One-DS/
 - Consolidación en DataFrame estructurado
 - Exportación a CSV para uso
 
-## Resultados Clave del Análisis
-
-El análisis exploratorio de datos (EDA) reveló una tasa de rotación (churn) global del **25.72%**.
+El análisis exploratorio de datos (EDA) reveló una tasa de rotación (churn) global del **26.54%**.
 
 La distribución de clientes muestra:
 
-- **5,398 clientes activos (74.28%)**
-- **1,869 clientes que abandonaron el servicio (25.72%)**
+- **5,174 clientes activos (73.46%)**
+- **1,869 clientes que abandonaron el servicio (26.54%)**
 
 ![Distribución de Churn](imgs/01_distribucion_churn.png)
-_Figura 1: Distribución global de Churn mostrando la tasa de abandono del 25.7% (Imbalanced Dataset)._
+_Figura 1: Distribución global de Churn mostrando la tasa de abandono del 26.5% (Dataset Limpio)._
 
 Al profundizar en los segmentos, identificamos factores críticos de riesgo:
 
 - **Demografía:**
-  - **Adultos Mayores:** Presentan un riesgo significativamente mayor, con un **40.27%** de churn frente al 22.89% de los no mayores.
-  - **Dependientes y Parejas:** Clientes _sin_ pareja (32.01%) o _sin_ dependientes (30.34%) tienen tasas de abandono mucho más altas que aquellos con lazos familiares.
+  - **Adultos Mayores:** Presentan un riesgo significativamente mayor, con un **41.68%** de churn frente al 23.61% de los no mayores.
+  - **Dependientes y Parejas:** Clientes _sin_ pareja (32.96%) o _sin_ dependientes (31.28%) tienen tasas de abandono mucho más altas que aquellos con lazos familiares (19.66% y 15.45% respectivamente).
 
 - **Contratos y Facturación:**
-  - **Tipo de Contrato:** El contrato **mensual (Month-to-month)** es el predictor más fuerte de abandono, con una tasa alarmante del **41.32%**, comparado con solo el 2.75% en contratos de dos años.
-  - **Método de Pago:** El uso de **Cheque Electrónico** está asociado con un churn del **43.80%**, mientras que los métodos automáticos (tarjeta de crédito/transferencia) rondan el 15-16%.
-  - **Facturación:** Los usuarios con facturación electrónica (Paperless) abandonan más (32.48%) que los que reciben factura física (15.87%).
+  - **Tipo de Contrato:** El contrato **mensual (Month-to-month)** es el predictor más fuerte de abandono, con una tasa del **42.71%**, comparado con solo el 2.83% en contratos de dos años.
+  - **Método de Pago:** El uso de **Cheque Electrónico** está asociado con un churn del **45.29%**, mientras que los métodos automáticos (tarjeta de crédito/transferencia) rondan el 15-16%.
+  - **Facturación:** Los usuarios con facturación electrónica (Paperless) abandonan más (33.57%) que los que reciben factura física (16.33%).
 
 ![Análisis de Contratos](imgs/05_analisis_contratos.png)
 _Figura 2: Impacto del tipo de contrato en la retención. Los contratos a largo plazo reducen drásticamente el riesgo._
 
 - **Antigüedad (Tenure):**
-  - Existe una correlación directa entre antigüedad y retención. Los clientes que abandonaron tenían en promedio **18 meses** de antigüedad, mientras que los clientes retenidos promedian **37.5 meses**. El primer año es el periodo más crítico.
+  - Existe una correlación directa entre antigüedad y retención. Los clientes que abandonaron tenían en promedio **18 meses** de antigüedad, mientras que los clientes retenidos promedian **37.6 meses**. El primer año es el periodo más crítico.
 
 ![Análisis de Permanencia](imgs/03_analisis_permanencia.png)
 _Figura 3: Distribución de permanencia. Se observa que el churn se concentra en los primeros meses de servicio._
 
 - **El Impacto del Gasto Diario (daily_account):**
-  - **Gasto de Clientes Perdidos:** El promedio de gasto diario para clientes en Churn es de 2.48, comparado con 2.04 de los clientes leales.
+  - **Gasto de Clientes Perdidos:** El promedio de gasto diario para clientes en Churn es de **2.48**, comparado con **2.04** de los clientes leales.
 
-  - **Umbral de Riesgo:** El 50% de los clientes que abandonan gastan más de 2.65 al día. El alto costo percibido es el detonante principal de salida.
+  - **Umbral de Riesgo:** El 50% de los clientes que abandonan gastan más de **2.65** al día. El alto costo percibido es el detonante principal de salida.
 
   ![Análisis de Gasto Diario](imgs/04_1_analisis_gasto_diario.png)
   _Figura 4: Relación entre el gasto diario y la tasa de cancelación._
@@ -179,4 +177,4 @@ Estos archivos se encuentran en la raíz del proyecto y son el resultado final d
 
 ## Licencia
 
-Este proyecto es parte del programa educativo de Alura LATAM y Oracle Next Education (ONE).
+Este proyecto es parte del programa educativo de Alura LATAM y Oracle Next Education (ONE). Siéntete libre de usarlo y modificarlo para fines de aprendizaje y educativos.

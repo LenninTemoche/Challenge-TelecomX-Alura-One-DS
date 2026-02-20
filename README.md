@@ -111,7 +111,7 @@ _Figura 3: Distribución de permanencia. Se observa que el churn se concentra en
 ![Matriz de Correlación](imgs/07_matriz_correlacion.png)
 _Figura 5: Matriz de correlación mostrando las relaciones entre variables numéricas._
 
-## 🛠️ Desafíos y Soluciones de Datos
+## Desafíos y Soluciones de Datos
 
 Durante el proceso ETL, se abordaron varios desafíos técnicos para asegurar la calidad del dataset final:
 
